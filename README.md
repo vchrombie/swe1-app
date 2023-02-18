@@ -32,3 +32,11 @@ $ poetry shell
 (.venv) $ python manage.py makemigrations polls
 (.venv) $ python manage.py migrate
 ```
+
+## create superuser
+
+```bash
+(.venv) $ python manage.py createsuperuser
+```
+create a superuser with username `admin` and password `admin` \
+visit `localhost:8000/admin` to login to the admin site
