@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "swe1-app"
+version = "0.1.0"
+description = "Poll application for SWE1 assignment."
+authors = ["Venu Vardhan Reddy Tekula <vt2182@nyu.edu>"]
+readme = "README.md"
+packages = [{include = "swe1_app"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.1.7"
+
+[tool.poetry.scripts]
+makemigrations = "scripts:makemigrations"
+migrate = "scripts:migrate"
+server = "scripts:server"
+shell = "scripts:shell"
+tests = "scripts:tests"
+createsuperuser = "scripts:createsuperuser"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
