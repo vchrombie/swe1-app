@@ -25,3 +25,10 @@ $ poetry shell
 ```bash
 (.venv) $ python manage.py startapp polls
 ```
+
+## create polls model and migrations
+
+```bash
+(.venv) $ python manage.py makemigrations polls
+(.venv) $ python manage.py migrate
+```
