@@ -19,3 +19,9 @@ $ poetry shell
 (.venv) $ django-admin startproject swe1_app .
 (.venv) $ python manage.py runserver
 ```
+
+## create a polls app
+
+```bash
+(.venv) $ python manage.py startapp polls
+```
