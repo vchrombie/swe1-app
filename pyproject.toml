@@ -9,6 +9,7 @@ packages = [{include = "swe1_app"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 Django = "^4.1.7"
+python-decouple = "^3.7"
 
 [tool.poetry.scripts]
 makemigrations = "scripts:makemigrations"
