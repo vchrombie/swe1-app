@@ -41,3 +41,9 @@ $ poetry shell
 create a superuser with username `admin` and password `admin` \
 visit `localhost:8000/admin` to login to the admin site \
 visit `localhost:8000/polls` to view the polls app
+
+## export dependencies
+
+```bash
+(.venv) $ poetry export -f requirements.txt --output requirements.txt
+```
