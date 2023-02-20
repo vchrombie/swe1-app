@@ -7,9 +7,9 @@ readme = "README.md"
 packages = [{include = "swe1_app"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
-Django = "^4.1.7"
-python-decouple = "^3.7"
+python = "^3.7"
+Django = "^3.2"
+python-decouple = "^3.4"
 
 [tool.poetry.scripts]
 makemigrations = "scripts:makemigrations"
