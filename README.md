@@ -1,8 +1,11 @@
 # swe1-app
 
-CS-GY 6063 SWE1: Django Hello World Developed and Deployed
-
 http://swe1-app.us-west-2.elasticbeanstalk.com/
+
+---
+CS-GY 6063 SWE1: Personal Assignments
+
+- Django Hello World Developed and Deployed
 
 > Deploy working Simple Django application (https://docs.djangoproject.com/en/4.1/intro/tutorial01/) to individual AWS accounts.
 > - Parts 1,2,3,4 of the tutorial need to be completed. This will produce a working polls application
@@ -65,7 +68,7 @@ visit `localhost:8000/polls` to view the polls app
 
 ## configure ebstalk
 
-install [eb cli](https://github.com/aws/aws-elastic-beanstalk-cli-setup) \
+install [eb cli](https://github.com/aws/aws-elastic-beanstalk-cli-setup)
 ```bash
 $ eb init -p python-3.7 swe1-app --region us-west-2
 $ eb create swe1-app
@@ -91,3 +94,12 @@ $ eb logs
 # terminate the environment
 $ eb terminate
 ```
+
+--
+
+## References
+
+- https://docs.djangoproject.com/en/3.2/intro/tutorial01/
+- https://testdriven.io/blog/django-elastic-beanstalk/
+- https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-django.html
+- https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-getting-started.html
