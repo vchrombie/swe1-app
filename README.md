@@ -11,6 +11,15 @@ CS-GY 6063 SWE1: Personal Assignments
 > - Parts 1,2,3,4 of the tutorial need to be completed. This will produce a working polls application
 > - Submit a URL of the working Django Application and a URL of the github repo.
 
+- Travis CI
+
+> Setup CI/CD and test suite for the Django Application
+> - Configure Travis CI to run your build on push/pull requests to repository and deploy the app to AWS EB upon successful completion of the tests
+> - Configure code formatting with [black](https://github.com/psf/black) and [flake8](https://flake8.pycqa.org/en/latest/) linter
+> - Check test suite code coverage with [coverage.py](https://coverage.readthedocs.io/) & [coveralls](https://coveralls.io/) and add a badge to the `README.md`
+> - Enable `Require status checks to pass before merging` on your repository
+> - Submit your working Travis Dashboard Url.
+
 ---
 
 ## create a new django project
@@ -95,7 +104,7 @@ $ eb logs
 $ eb terminate
 ```
 
---
+---
 
 ## References
 
