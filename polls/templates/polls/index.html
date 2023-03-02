@@ -1,9 +1,93 @@
-{% if latest_question_list %}
-    <ul>
-    {% for question in latest_question_list %}
-        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No polls are available.</p>
-{% endif %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Polls App - Index</title>
+    <style>
+      /* CSS styles for the body element */
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        background-color: #f2f2f2;
+      }
+      
+      /* CSS styles for the header element */
+      header {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      /* CSS styles for the h1 element */
+      h1 {
+        margin: 0;
+        font-size: 36px;
+      }
+      
+      /* CSS styles for the h2 element */
+      h2 {
+        font-size: 24px;
+        margin-top: 30px;
+      }
+      
+      /* CSS styles for the ul element */
+      ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
+      }
+      
+      /* CSS styles for the li element */
+      li {
+        margin-bottom: 5px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      /* CSS styles for the a element */
+      a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.2s ease-in-out;
+      }
+      
+      /* CSS styles for the a element when hovered */
+      a:hover {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      
+      /* CSS styles for the li element when the first child */
+      li:first-child {
+        margin-top: 20px;
+      }
+      
+      /* CSS styles for the li element when the last child */
+      li:last-child {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Polls App</h1>
+    </header>
+    <div class="container">
+      <h2>Available Polls:</h2>
+        {% if latest_question_list %}
+            <ul>
+            {% for question in latest_question_list %}
+                <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>No polls are available.</p>
+        {% endif %}
+    </div>
+  </body>
+</html>
