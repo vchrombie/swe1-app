@@ -2,6 +2,9 @@
 
 http://swe1-app.us-west-2.elasticbeanstalk.com/
 
+[![Build Status](https://app.travis-ci.com/vchrombie/swe1-app.svg?branch=master)](https://app.travis-ci.com/vchrombie/swe1-app)
+[![Coverage Status](https://coveralls.io/repos/github/vchrombie/swe1-app/badge.svg?branch=master)](https://coveralls.io/github/vchrombie/swe1-app?branch=master)
+
 ---
 CS-GY 6063 SWE1: Personal Assignments
 
