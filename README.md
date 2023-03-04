@@ -61,6 +61,7 @@ visit `localhost:8000/polls` to view the polls app
 
 ```bash
 (.venv) $ poetry export -f requirements.txt --output requirements.txt
+(.venv) $ poetry export -f requirements.txt --output requirements-dev.txt --only dev
 ```
 
 ## collect static files
@@ -110,6 +111,32 @@ $ eb terminate
 (.venv) $ python manage.py test
 ```
 
+## install dev dependencies
+
+```bash
+(.venv) $ poetry add --group dev black flake8 coverage coveralls
+```
+
+## run black (code formatter)
+
+```bash
+(.venv) $ black --check .
+```
+
+## run flake8 (linter)
+
+```bash
+(.venv) $ flake8 .
+```
+
+## run coverage and coveralls
+
+```bash
+(.venv) $ coverage run --source='.' manage.py test
+(.venv) $ coverage report
+(.venv) $ coveralls
+```
+
 ---
 
 ## References
@@ -118,3 +145,8 @@ $ eb terminate
 - https://testdriven.io/blog/django-elastic-beanstalk/
 - https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-django.html
 - https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-getting-started.html
+- https://docs.travis-ci.com/user/tutorial/
+- https://black.readthedocs.io/en/stable/
+- https://flake8.pycqa.org/en/5.0.4/
+- https://coverage.readthedocs.io/en/6.5.0/
+- https://coveralls-python.readthedocs.io/en/latest/

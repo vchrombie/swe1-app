@@ -19,6 +19,17 @@ shell = "scripts:shell"
 tests = "scripts:tests"
 createsuperuser = "scripts:createsuperuser"
 
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+flake8 = "^5.0.4"
+coverage = "^6.5.0"
+coveralls = "^3.3.1"
+
+[tool.black]
+line-length = 120
+preview = true
+target-version = ['py37']
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
