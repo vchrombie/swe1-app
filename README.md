@@ -104,6 +104,12 @@ $ eb logs
 $ eb terminate
 ```
 
+## run django tests
+
+```bash
+(.venv) $ python manage.py test
+```
+
 ---
 
 ## References
