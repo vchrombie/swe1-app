@@ -19,3 +19,15 @@ script:
 
 after_success:
     - coveralls
+
+deploy:
+  on:
+    branch: master
+  provider: elasticbeanstalk
+  region: "us-west-2"
+  app: "swe1-app"
+  env: "swe1-app"
+  bucket_name: "elasticbeanstalk-us-west-2-906796636311"
+  bucket_path: "swe1-app"
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY

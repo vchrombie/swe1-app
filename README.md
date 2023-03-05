@@ -153,3 +153,4 @@ $ eb terminate
 - https://flake8.pycqa.org/en/5.0.4/
 - https://coverage.readthedocs.io/en/6.5.0/
 - https://coveralls-python.readthedocs.io/en/latest/
+- https://docs.travis-ci.com/user/deployment/elasticbeanstalk/
